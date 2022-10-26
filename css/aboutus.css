@@ -1,0 +1,117 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+.header{
+    height: 17vh;
+    background-color: #191919;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav{
+    border-top: solid 2px white;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #191919;
+}
+.navigation{
+    height: 10vh;
+    font-size: 18px;
+    width: 75%;
+    background-color: #191919;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+}
+nav a{
+    text-decoration: none;
+    width: 15%;
+}
+nav a:hover{
+    background-color: #272727;
+}
+.navbar{
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content{
+    height: 75vh;
+    background-color: #F7FFF7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.content img{
+    width: 500px;
+}
+.content p{
+    width: 75%;
+}
+
+.footer{
+    height: 30vh;
+    background-color: #191919;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.footer-up{
+    height: 45%;
+}
+.footer-down{
+    height: 55%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.footer-logo{
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+}
+.logo-sosmed{
+    width: 45px;
+}
+
+@media screen and (max-width:480px){
+    h2{
+        width: 70%;
+    }
+    .navigation{
+        width: 90%;
+        font-size: 15px;
+    }
+    .content img{
+        width: 300px;
+    }
+}
+
+@media screen and (max-width:800px) and (min-width:481px){
+    h2{
+        width: 70%;
+    }
+    .navigation{
+        width: 90%;
+        font-size: 18px;
+    }
+    .content img{
+        width: 350px;
+    }
+}

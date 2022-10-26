@@ -1,0 +1,279 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+img {
+    object-fit: cover;
+}
+
+.header{
+    height: 17vh;
+    background-color: #191919;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav{
+    border-top: solid 2px white;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #191919;
+}
+
+.navigation{
+    height: 10vh;
+    font-size: 18px;
+    width: 75%;
+    background-color: #191919;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+nav a{
+    text-decoration: none;
+    width: 15%;
+}
+
+nav a:hover{
+    background-color: #272727;
+}
+
+.navbar{
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.body{
+    margin: 0;
+    background-color: #F7FFF7;
+}
+
+.promo{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 180px;
+    margin-bottom: 160px;
+}
+
+.PromoPicture{
+    position: relative;
+    width: 400px;
+}
+
+.PromoImg{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.PromoOverlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    color: #Ffffff;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.PromoOverlay > * {
+    transform: translateY(20px);
+    transition: transform 0.5s;
+}
+
+.PromoOverlayTitle{
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.PromoOverlayDesc{ 
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+.PromoOverlay:hover{
+    opacity: 1;
+}
+
+.PromoOverlay:hover > *{
+    transform: translateY(0);
+}
+
+.button{
+    border: none;
+    border-radius: 10px;
+    width: 400px;
+    background-color: #F7B32B;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #DD4B1A;
+}
+
+.tc{
+    color: #DD4B1A;
+    font-size: 18px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.footer{
+    height: 30vh;
+    background-color: #191919;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-up{
+    height: 45%;
+}
+
+.footer-down{
+    height: 55%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.footer-logo{
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.logo-sosmed{
+    width: 45px;
+}
+
+@media screen and (max-width:480px){
+    .header{
+        height: 12vh;
+    }
+    
+    .headerimg{
+        width: 80px;
+    }
+
+    .navigation{
+        height: 10vh;
+        font-size: 10px;
+        width: 75%;
+    }
+
+    nav a{
+        width: 20%;
+    }
+    
+    .promo{
+        margin-top: 90px;
+        margin-bottom: 60px;
+    }
+
+    .PromoPicture{
+        width: 120px;
+    }
+    
+    .PromoOverlayTitle{
+        font-size: 10px;
+    }
+    
+    .PromoOverlayDesc{ 
+        margin-top: 5px;
+        font-size: 5px;
+    }
+
+    .button{
+
+        border-radius: 5px;
+        width: 120px;
+        padding: 8px 12px;
+        font-size: 8px;
+        margin: 5px 1px;
+    }
+
+    .tc{
+        font-size: 10px;
+        margin-bottom: 15px;
+    }
+    
+    
+}
+
+@media screen and (max-width:800px) and (min-width:481px){
+
+    .navigation{
+        height: 10vh;
+        font-size: 10px;
+        width: 75%;
+    }
+
+    nav a{
+        width: 20%;
+    }
+
+    .promo{
+        margin-top: 90px;
+        margin-bottom: 60px;
+    }
+
+    .PromoPicture{
+        width: 200px;
+    }
+
+    .PromoOverlayTitle{
+        font-size: 14px;
+    }
+
+    .PromoOverlayDesc{ 
+        margin-top: 8px;
+        font-size: 8px;
+    }
+
+    .button{
+
+        border-radius: 8px;
+        width: 200px;
+        padding: 10px 14px;
+        font-size: 14px;
+        margin: 8px 2px;
+    }
+
+    .tc{
+        font-size: 16px;
+        margin-bottom: 30px;
+    }
+
+
+
+}

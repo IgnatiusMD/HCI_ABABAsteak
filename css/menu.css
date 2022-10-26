@@ -1,0 +1,635 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+img {
+    object-fit: cover;
+}
+
+.header{
+    height: 17vh;
+    background-color: #191919;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav{
+    border-top: solid 2px white;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #191919;
+}
+
+.navigation{
+    height: 10vh;
+    font-size: 18px;
+    width: 75%;
+    background-color: #191919;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+nav a{
+    text-decoration: none;
+    width: 15%;
+}
+
+nav a:hover{
+    background-color: #272727;
+}
+
+.navbar{
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.body{
+    margin: 0;
+    background-color: #F7FFF7;
+}
+
+.RecomendUp{
+    background-color: #F7B32B;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+    color: #DD4B1A;
+    font-weight: bold;
+    font-size: 36px;
+}
+
+.RecomendDown{
+    margin-top: 60px;
+    margin-bottom: 60px;
+    margin-left: 100px;
+    margin-right: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.RecomendedPicture{
+    position: relative;
+    width: 550px;
+    height: 430px;
+    margin-top: 25px;
+    margin-left: 35px;
+    margin-right: 35px;
+}
+
+.RecomendedImg{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.RecomendedOverlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    color: #Ffffff;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.5s;
+    padding: 0.5rem;
+}
+
+.RecomendedOverlay > * {
+    transform: translateY(20px);
+    transition: transform 0.5s;
+}
+
+.RecomendedOverlayTitle{
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.RecomendedOverlayDesc{  
+    font-size: 28px;
+}
+
+.RecomendedOverlay:hover{
+    opacity: 1;
+}
+
+.RecomendedOverlay:hover > *{
+    transform: translateY(0);
+}
+
+.MenuUp{ 
+    background-color: #F7B32B;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+    color: #DD4B1A;
+    font-weight: bold;
+    font-size: 36px;
+}
+
+.MenuDown{
+    margin-bottom: 80px;
+    margin-left: 140px;
+    margin-right: 140px;
+}
+
+.row{
+    margin-top: 78px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.MenuList{
+    background-image: url(../assets/MenuListBG.jpg);
+}
+
+.MenuPicture{
+    position: relative;
+    width: 250px;
+    height: 180px;
+    margin-top: 25px;
+    margin-left: 35px;
+    margin-right: 35px;
+    box-shadow:  3px 3px 3px 3px #888888;
+}
+
+.MenuImg{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.MenuOverlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    color: #Ffffff;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.MenuOverlay > * {
+    transform: translateY(20px);
+    transition: transform 0.5s;
+}
+
+.MenuOverlayDesc{  
+    font-size: 14px;
+}
+
+.MenuOverlay:hover{
+    opacity: 1;
+}
+
+.MenuOverlay:hover > *{
+    transform: translateY(0);
+}
+
+.MenuTitle{
+    margin-top: 40px;
+    font-size: 24px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    text-shadow: 1px 1px 3px #888888;
+}
+
+.MenuPrice{
+    margin-top: 90px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    text-align: center;
+    color: #DD4B1A;
+}
+
+.BeverageUp{ 
+    background-color: #F7B32B;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+    color: #DD4B1A;
+    font-weight: bold;
+    font-size: 36px;
+}
+
+.BeverageDown{
+    margin-bottom: 80px;
+    margin-left: 140px;
+    margin-right: 140px;
+}
+
+.BeverageList{
+    background-image: url(../assets/MenuListBG.jpg);
+}
+
+.BeveragePicture{
+    position: relative;
+    width: 250px;
+    height: 180px;
+    margin-top: 25px;
+    margin-left: 35px;
+    margin-right: 35px;
+    box-shadow:  3px 3px 3px 3px #888888;
+}
+
+.BeverageImg{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.BeverageOverlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    color: #Ffffff;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.BeverageOverlay > * {
+    transform: translateY(20px);
+    transition: transform 0.5s;
+}
+
+.BeverageOverlayDesc{  
+    font-size: 14px;
+}
+
+.BeverageOverlay:hover{
+    opacity: 1;
+}
+
+.BeverageOverlay:hover > *{
+    transform: translateY(0);
+}
+
+.BeverageTitle{
+    margin-top: 40px;
+    font-size: 24px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    text-shadow: 1px 1px 3px #888888;
+}
+
+.BeveragePrice{
+    margin-top: 90px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    text-align: center;
+    color: #DD4B1A;
+}
+
+.footer{
+    height: 30vh;
+    background-color: #191919;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-up{
+    height: 45%;
+}
+
+.footer-down{
+    height: 55%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.footer-logo{
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.logo-sosmed{
+    width: 45px;
+}
+
+@media screen and (max-width:480px){
+    .header{
+        height: 12vh;
+    }
+    
+    .headerimg{
+        width: 80px;
+    }
+
+    .navigation{
+        height: 10vh;
+        font-size: 10px;
+        width: 75%;
+    }
+
+    nav a{
+        width: 20%;
+    }
+
+    .RecomendUp{
+        font-size: 12px;
+        height: 25px;
+    }
+
+    .RecomendDown{
+        margin-top: 12px;
+        margin-bottom: 12px;
+        margin-left: 20px;
+        margin-right: 20px;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .RecomendedPicture{
+        position: relative;
+        width: 110px;
+        height: 86px;
+        margin-top: 5px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .RecomendedOverlayTitle{
+        font-size: 12px;
+        font-weight: bold;
+    }
+    
+    .RecomendedOverlayDesc{  
+        font-size: 8px;
+    }
+
+    .MenuUp{ 
+        height: 25px;
+        font-size: 12px;
+    }
+
+    .MenuDown{
+        margin-bottom: 35px;
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+    
+    .row{
+        margin-top: 35px;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    
+    .MenuList{
+        background-image: url(../assets/MenuListBG.jpg);
+        width: 70px;
+        height: 100px;
+    }
+    
+    .MenuPicture{
+        position: relative;
+        width: 60px;
+        height: 40px;
+        margin-top: 5px;
+        margin-left: 5px;
+        margin-right: 5px;
+        box-shadow:  1px 1px 1px 1px #888888;
+    }
+
+    .MenuOverlayDesc{  
+        font-size: 4px;
+    }
+
+    .MenuTitle{
+        margin-top: 4px;
+        font-size: 6px;
+        text-shadow: 0.2px 0.2px 1px #888888;
+    }
+    
+    .MenuPrice{
+        margin-top: 25px;
+        margin-bottom: 4px;
+        font-size: 6px;
+    }
+
+    .BeverageUp{ 
+        height: 25px;
+        font-size: 12px;
+    }
+
+    .BeverageDown{
+        margin-bottom: 35px;
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+    
+    .BeverageList{
+        background-image: url(../assets/MenuListBG.jpg);
+        width: 70px;
+        height: 100px;
+    }
+    
+    .BeveragePicture{
+        position: relative;
+        width: 60px;
+        height: 40px;
+        margin-top: 5px;
+        margin-left: 5px;
+        margin-right: 5px;
+        box-shadow:  1px 1px 1px 1px #888888;
+    }
+
+    .BeverageOverlayDesc{  
+        font-size: 4px;
+    }
+
+    .BeverageTitle{
+        margin-top: 4px;
+        font-size: 6px;
+        text-shadow: 0.2px 0.2px 1px #888888;
+    }
+    
+    .BeveragePrice{
+        margin-top: 25px;
+        margin-bottom: 4px;
+        font-size: 6px;
+    }
+
+    .footer{
+        height: 20vh;
+    }
+
+    .footerimg{
+        margin-top: 10px;
+        width: 80px;
+    }
+    
+    .footer-down{
+        font-size: 6px;
+        margin-bottom: 10px;
+    }
+
+    .logo-sosmed{
+        width: 20px;
+    }
+}
+
+@media screen and (max-width:800px) and (min-width:481px){
+    
+    .RecomendUp{
+        height: 40px;
+        font-size: 20px;
+    }
+
+    .RecomendDown{
+        margin-top: 30px;
+        margin-bottom: 30px;
+        margin-left: 50px;
+        margin-right: 50px;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .RecomendedPicture{
+        position: relative;
+        width: 240px;
+        height: 140px;
+        margin-top: 15px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+ 
+    .RecomendedOverlayTitle{
+        font-weight: bold;
+        font-size: 12px;
+    }
+  
+    .RecomendedOverlayDesc{  
+        font-size: 10px;
+    }
+
+    .MenuUp{ 
+        height: 40px;
+        font-size: 20px;
+    }
+ 
+    .MenuDown{
+        margin-bottom: 50px;
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+    
+    .row{
+        margin-top: 45px;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    
+    .MenuList{
+        background-image: url(../assets/MenuListBG.jpg);
+        width: 140px;
+        height: 180px;
+    }
+   
+    .MenuPicture{
+        position: relative;
+        width: 120px;
+        height: 80px;
+        margin-top: 10px;
+        margin-left: 10px;
+        margin-right: 10px;
+        box-shadow:  2px 2px 2px 1px #888888;
+    }
+
+    .MenuOverlayDesc{  
+        font-size: 8px;
+    }
+
+    .MenuTitle{
+        margin-top: 8px;
+        font-size: 12px;
+        text-shadow: 0.5px 0.5px 1px #888888;
+    }
+    
+    .MenuPrice{
+        margin-top: 30px;
+        margin-bottom: 8px;
+        font-size: 12px;
+    }
+
+    .BeverageUp{ 
+        height: 40px;
+        font-size: 20px;
+    }
+
+    .BeverageDown{
+        margin-bottom: 50px;
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+    
+    .BeverageList{
+        background-image: url(../assets/MenuListBG.jpg);
+        width: 140px;
+        height: 180px;
+    }
+    
+    .BeveragePicture{
+        position: relative;
+        width: 120px;
+        height: 80px;
+        margin-top: 10px;
+        margin-left: 10px;
+        margin-right: 10px;
+        box-shadow:  2px 2px 2px 1px #888888;
+    }
+
+    .BeverageOverlayDesc{  
+        font-size: 8px;
+    }
+
+    .BeverageTitle{
+        margin-top: 8px;
+        font-size: 12px;
+        text-shadow: 0.5px 0.5px 1px #888888;
+    }
+    
+    .BeveragePrice{
+        margin-top: 30px;
+        margin-bottom: 8px;
+        font-size: 12px;
+    }
+}
